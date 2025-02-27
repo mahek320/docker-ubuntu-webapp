@@ -22,17 +22,16 @@ iii. Connect to the terminal of your instance and set the hostname to docker.
 <img src="https://github.com/user-attachments/assets/5cf409e3-086c-49c7-b207-a3d550f6e283" width="500"/><br><br>
 
 iv. Run the below docker commands on the terminal to install docker.
+<br>
 
 ```sh
-
     yum update -y 
     sudo yum install -y yum utils 
     sudo yum install docker -y 
     sudo systemctl start docker
     sudo systemctl enable docker
-
 ```
-
+<br>
 <img src="https://github.com/user-attachments/assets/36a63a79-d5c6-4d92-98a9-eb6c8e5ee28d" width="500"/><br><br>
 
 
@@ -43,35 +42,38 @@ v. We will now pull the unbuntu image using docker run command.
 
 
 vi. We will now install and update the apache package. 
-
-``sh
+<br>
+```sh
 apt update -y
 apt install apache2 -y
-``
+```
+
 
 vii. We will change the directory and create a new html file in the terminal.
+
 
 
 <img src="https://github.com/user-attachments/assets/6df4c9ed-7cde-45d9-b122-d1b0483633b4" width="500"/><br><br>
 
 
 viii. We will start the apache after creating the html file in the same directory.
-
-``sh
+<br>
+```sh
 service apache start
-``
+```
+<br>
 
 ix. We will check the list of containers created using command 
-
-``sh
+<br>
+```sh
 docker ps -a
-``
-
+```
+<br>
 <img src="https://github.com/user-attachments/assets/1dd5fa48-6672-4857-8f93-549b94d4675c" width="500"/><br><br>
 
 
 x. We will then copy the public IP address from the created instance and add :8080 after the IP address.
-
+<br>
 
 <img src="https://github.com/user-attachments/assets/55779084-952c-40b5-9395-d2cf01acec49" width="500"/><br><br>
 
